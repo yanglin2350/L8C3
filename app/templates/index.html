@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Q2-Lin Yang</title>
+<h1 align="center">My Second HTML</h1>
+
+<script>
+function getmymenu()
+{
+    if(document.getElementById("0").checked==true)
+    {
+        MyNoodles="no noodles,thank you";
+    }
+    if(document.getElementById("00").checked==true)
+    {
+        MyCake="no cake,thank you";
+    }
+    if(document.getElementById("0a").checked==true)
+    {
+        MyIcecream="no ice cream,thank you";
+    }
+    if(document.getElementById("0b").checked==true)
+    {
+        MyBbq="no bbq,thank you";
+    }
+
+    if(document.getElementById("1").checked==true)
+    {
+        MyNoodles="one noodles please";
+    }
+    if(document.getElementById("11").checked==true)
+    {
+        MyCake="one cake please";
+    }
+    if(document.getElementById("1a").checked==true)
+    {
+        MyIcecream="one ice cream please";
+    }
+    if(document.getElementById("1b").checked==true)
+    {
+        MyBbq="one bbq please";
+    }
+
+    if(document.getElementById("2").checked==true)
+    {
+        MyNoodles="two noodles please";
+    }
+    if(document.getElementById("22").checked==true)
+    {
+        MyCake="two cakes please";
+    }
+    if(document.getElementById("2a").checked==true)
+    {
+        MyIcecream="two ice creams please";
+    }
+    if(document.getElementById("2b").checked==true)
+    {
+        MyBbq="two bbq please";
+    }
+    document.getElementById("Menu").innerHTML=MyNoodles;
+    document.getElementById("Menu1").innerHTML=MyCake;
+    document.getElementById("Menu2").innerHTML=MyIcecream;
+    document.getElementById("Menu3").innerHTML=MyBbq;
+    return false;
+}
+</script>
+
+</head>
+<body>
+    <br><br>
+    <p style="text-align:center">
+     <img src="noodles.jpg" width="150" alt="Logo">
+     <img src="cake.jpg" width="150" alt="Logo">
+     <img src="icecream.webp" width="150" alt="Logo">
+     <img src="bbq.jpg" width="150" alt="Logo">
+    </p >
+    <form method="post" onsubmit="return getmymenu()">
+<table align="center" border="1" width="600">
+    <tr>
+       <td align="center">aMenu</td><td align="30%">Please choose what you want to eat</td>
+    </tr>
+
+    <tr>
+       <td align="center">Noodles</td>
+       <td>
+        <input type="radio" id="0" name="noodles" value="0">0
+        <input type="radio" id="1" name="noodles" value="1">1
+        <input type="radio" id="2" name="noodles" value="2">2
+    </td>
+    </tr>
+
+    <tr>
+        <td align="center">Cake</td>
+        <td>
+         <input type="radio" id="00" name="cake" value="0">0
+         <input type="radio" id="11" name="cake" value="1">1
+         <input type="radio" id="22" name="cake" value="2">2
+    </td>
+    </tr>
+
+    <tr>
+        <td align="center">Ice cream</td>
+        <td>
+         <input type="radio" id="0a" name="icecream" value="0">0
+         <input type="radio" id="1a" name="icecream" value="1">1
+         <input type="radio" id="2a" name="icecream" value="2">2
+    </td>
+    </tr>
+
+    <tr>
+        <td align="center">Bbq</td>
+        <td>
+         <input type="radio" id="0b" name="bbq" value="0">0
+         <input type="radio" id="1b" name="bbq" value="1">1
+         <input type="radio" id="2b" name="bbq" value="2">2
+    </td>
+    </tr>
+
+    <tr>
+      <td align="center">
+        <input type="submit" value="Finish">
+        
+        <td>Please submit your selection, Thank you!</td>
+    </tr>
+</table>
+</form>
+<br><br>
+
+<table align="center" border="1" width="600">
+ <tr>
+  <td width="33%">List:</td>
+  <td align="center">The Order</td>
+ </tr>
+
+ <tr>
+    <td width="33%">Noodles:</td>
+    <td><div id="Menu"></div></td>
+ </tr>
+
+ <tr>
+    <td width="33%">Cake:</td>
+    <td><div id="Menu1"></div></td>
+ </tr>
+
+ <tr>
+    <td width="33%">Ice cream:</td>
+    <td><div id="Menu2"></div></td>
+ </tr>
+ 
+ <tr>
+    <td width="33%">Bbq:</td>
+    <td><div id="Menu3"></div></td>
+ </tr>
+
+</table>
+
+</body>
+</html>
